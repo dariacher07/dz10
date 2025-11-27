@@ -7,4 +7,241 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="dz10\BuildingLibrary\Building.cs" />
+    <Compile Remove="dz10\BuildingLibrary\BankAccountTumakov.cs" />
+    <Compile Remove="dz10\BuildingLibrary\BankTransaction.cs" />
+    <Compile Remove="dz10\BuildingLibrary\BankAccountFabrica.cs" />
+    <Compile Remove="dz10\BuildingLibrary\BankAccount.cs" />
+    <Compile Remove="dz10\BuildingLibrary\Creator.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.AssemblyInfo.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.GlobalUsings.g.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net8.0\BuildingLibrary.AssemblyInfo.cs" />
+    <Compile Remove="dz10\BuildingLibrary\obj\Debug\net8.0\BuildingLibrary.GlobalUsings.g.cs" />
+    <Compile Remove="dz10\BuildingApp\Program.cs" />
+    <Compile Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.AssemblyInfo.cs" />
+    <Compile Remove="dz10\BuildingApp\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.GlobalUsings.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BankAccounts.cs">
+      <DependentUpon>BankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BankAccount.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccount.cs</DependentUpon>
+      <LastGenOutput>BankAccount.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankTransaction.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankTransaction.cs</DependentUpon>
+      <LastGenOutput>BankTransaction.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankAccountTumakov.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccountTumakov.cs</DependentUpon>
+      <LastGenOutput>BankAccountTumakov.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankAccountFabrica.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccountFabrica.cs</DependentUpon>
+      <LastGenOutput>BankAccountFabrica.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Building.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Building.cs</DependentUpon>
+      <LastGenOutput>Building.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Creatorы.cs">
+      <DependentUpon>Creator.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Creator.cs">
+      <DependentUpon>Creator.cs</DependentUpon>
+      <LastGenOutput>Creator.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Упражнение 11\BankAccount.cs">
+      <DependentUpon>BankAccount.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BankAccount.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Упражнение 11\BankAccountFabrica.cs">
+      <DependentUpon>BankAccountFabrica.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BankAccountFabrica.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Упражнение 11\BankAccountTumakov.cs">
+      <DependentUpon>BankAccountTumakov.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BankAccountTumakov.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Упражнение 11\BankTransaction.cs">
+      <DependentUpon>BankTransaction.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BankTransaction.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 11.1\Building.cs">
+      <DependentUpon>Building.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Building.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 11.1\Creator.cs">
+      <DependentUpon>Creator.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Creator.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Упражнение 12.1\BankAccountExercise12.cs">
+      <DependentUpon>..\BankAccountExercise12.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BankAccountExercise12.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="RationalNumbers.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>RationalNumbers.cs</DependentUpon>
+      <LastGenOutput>RationalNumbers.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="упражнение 12.2\RationalNumbers.cs">
+      <DependentUpon>RationalNumbers.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>RationalNumbers.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="ComplexNumbersы.cs">
+      <DependentUpon>ComplexNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Домашнее задание 12.1\ComplexNumbers.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>..\ComplexNumbers.cs</DependentUpon>
+      <LastGenOutput>ComplexNumbers.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Book.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Book.cs</DependentUpon>
+      <LastGenOutput>Book.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BookContainer.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BookContainer.cs</DependentUpon>
+      <LastGenOutput>BookContainer.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Delegate.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Delegate.cs</DependentUpon>
+      <LastGenOutput>Delegate.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BookCompare.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BookCompare.cs</DependentUpon>
+      <LastGenOutput>BookCompare.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 12.2\Book.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Book.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 12.2\BookCompare.cs">
+      <DependentUpon>BookCompare.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BookCompare.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 12.2\BookContainer.cs">
+      <DependentUpon>BookContainer.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>BookContainer.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 12.2\Delegate.cs">
+      <DependentUpon>Delegate.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Delegate.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Student.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Student.cs</DependentUpon>
+      <LastGenOutput>Student.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Event.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Event.cs</DependentUpon>
+      <LastGenOutput>Event.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="PastEvent.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>PastEvent.cs</DependentUpon>
+      <LastGenOutput>PastEvent.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="SortingPastEvent.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>SortingPastEvent.cs</DependentUpon>
+      <LastGenOutput>SortingPastEvent.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="dz10\BuildingLibrary\.DS_Store" />
+    <None Remove="dz10\BuildingLibrary\obj\BuildingLibrary.csproj.nuget.dgspec.json" />
+    <None Remove="dz10\BuildingLibrary\obj\BuildingLibrary.csproj.nuget.g.props" />
+    <None Remove="dz10\BuildingLibrary\obj\project.nuget.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\BuildingLibrary.csproj.nuget.g.targets" />
+    <None Remove="dz10\BuildingLibrary\obj\project.assets.json" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.csproj.CoreCompileInputs.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.AssemblyInfoInputs.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.pdb" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.assets.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.dll" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.csproj.FileListAbsolute.txt" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\BuildingLibrary.csproj.AssemblyReference.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\ref\BuildingLibrary.dll" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net6.0\refint\BuildingLibrary.dll" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net8.0\BuildingLibrary.AssemblyInfoInputs.cache" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net8.0\BuildingLibrary.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="dz10\BuildingLibrary\obj\Debug\net8.0\BuildingLibrary.assets.cache" />
+    <None Remove="dz10\BuildingLibrary\bin\Debug\net6.0\BuildingLibrary.pdb" />
+    <None Remove="dz10\BuildingLibrary\bin\Debug\net6.0\BuildingLibrary.dll" />
+    <None Remove="dz10\BuildingLibrary\bin\Debug\net6.0\BuildingLibrary.deps.json" />
+    <None Remove="dz10\.DS_Store" />
+    <None Remove="dz10\BuildingApp\obj\BuildingApp.csproj.nuget.g.props" />
+    <None Remove="dz10\BuildingApp\obj\BuildingApp.csproj.nuget.dgspec.json" />
+    <None Remove="dz10\BuildingApp\obj\BuildingApp.csproj.nuget.g.targets" />
+    <None Remove="dz10\BuildingApp\obj\project.nuget.cache" />
+    <None Remove="dz10\BuildingApp\obj\project.assets.json" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.AssemblyInfoInputs.cache" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.csproj.CopyComplete" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.pdb" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.assets.cache" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.csproj.CoreCompileInputs.cache" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.csproj.FileListAbsolute.txt" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\apphost" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.dll" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.genruntimeconfig.cache" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.csproj.AssemblyReference.cache" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\BuildingApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\ref\BuildingApp.dll" />
+    <None Remove="dz10\BuildingApp\obj\Debug\net6.0\refint\BuildingApp.dll" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingApp" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingApp.pdb" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingApp.dll" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingLibrary.pdb" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingApp.deps.json" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingLibrary.dll" />
+    <None Remove="dz10\BuildingApp\bin\Debug\net6.0\BuildingApp.runtimeconfig.json" />
+    <None Remove="Упражнение 11\" />
+    <None Remove="Домашнее задание 11.1\" />
+    <None Remove="Упражнение 12.1\" />
+    <None Remove="упражнение 12.2\" />
+    <None Remove="Домашнее задание 12.1\" />
+    <None Remove="Домашнее задание 12.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Упражнение 11\" />
+    <Folder Include="Домашнее задание 11.1\" />
+    <Folder Include="Упражнение 12.1\" />
+    <Folder Include="упражнение 12.2\" />
+    <Folder Include="Домашнее задание 12.1\" />
+    <Folder Include="Домашнее задание 12.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Students.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Student.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Student.cs</DependentUpon>
+      <LastGenOutput>Student.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="SortingPastEvent.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>SortingPastEvent.cs</DependentUpon>
+      <LastGenOutput>SortingPastEvent.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="PastEvent.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>PastEvent.cs</DependentUpon>
+      <LastGenOutput>PastEvent.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Event.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Event.cs</DependentUpon>
+      <LastGenOutput>Event.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="задача 1\Event.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Event.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="задача 1\PastEvent.cs">
+      <DependentUpon>PastEvent.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>PastEvent.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="задача 1\SortingPastEvent.cs">
+      <DependentUpon>SortingPastEvent.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>SortingPastEvent.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="задача 1\Student.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Student.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Reaction.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Reaction.cs</DependentUpon>
+      <LastGenOutput>Reaction.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Задача 2\Events.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>..\Events.cs</DependentUpon>
+      <LastGenOutput>Events.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Задача 2\Person.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>..\Person.cs</DependentUpon>
+      <LastGenOutput>Person.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="задача 1\" />
+    <None Remove="Задача 2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="задача 1\" />
+    <Folder Include="Задача 2\" />
+  </ItemGroup>
+</Project>

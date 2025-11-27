@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="BankTransactionсы.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankTransactionсы.cs</DependentUpon>
+      <LastGenOutput>BankTransactionсы.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankTransaction.cs">
+      <DependentUpon>BankTransactionсы.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BankAccountTumakov.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccountTumakov.cs</DependentUpon>
+      <LastGenOutput>BankAccountTumakov.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankTransaction.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankTransaction.cs</DependentUpon>
+      <LastGenOutput>BankTransaction.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankAccountFabric.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccountFabric.cs</DependentUpon>
+      <LastGenOutput>BankAccountFabric.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankAccountFabrica.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccountFabrica.cs</DependentUpon>
+      <LastGenOutput>BankAccountFabrica.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BankAccoun.cs">
+      <DependentUpon>BankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BankAccount.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BankAccount.cs</DependentUpon>
+      <LastGenOutput>BankAccount.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+</Project>

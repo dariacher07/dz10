@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Building.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Building.cs</DependentUpon>
+      <LastGenOutput>Building.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Creator.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Creator.cs</DependentUpon>
+      <LastGenOutput>Creator.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Program.cs">
+      <DependentUpon>Program.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Programs.cs">
+      <DependentUpon>Program.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Program.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Program.cs</DependentUpon>
+      <LastGenOutput>Program.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+</Project>
